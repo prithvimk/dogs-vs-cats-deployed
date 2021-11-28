@@ -19,7 +19,7 @@ def save_uploaded_file(up_file):
     try:
         with open(os.path.join('static\images', up_file.name), 'wb') as file:
             file.write(uploaded_file.getbuffer())
-            print('file written')
+            #print('file written')
         return 1
     except:
         return 0
